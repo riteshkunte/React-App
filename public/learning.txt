@@ -1,0 +1,144 @@
+TypeScript
+
+React is js lib, creted by fb in 2011
+
+why created?	
+	when html page load into browser then browser
+will create tree like structure called DOM.
+
+		App
+
+NavBar		Aside		GameGrid
+				GameCard
+				LikeButton
+
+
+npm create vite@4.1.0
+react-app
+react
+typescript
+
+cd react-app
+npm i
+
+vscode extention get installed: prettier
+
+code .
+
+npm run dev
+
+folder structure
+	node module
+		all thrid party lib and react installed
+		nver touch it
+	pubilc folder
+		public asset exist like images, video
+	src (components)
+		app.tsx
+			
+	index.html
+		div tag with root as id for container
+		
+	package.json
+		project information like
+			name
+			version
+			dependencies
+			dev dependencies
+	tsconfig.json
+		telling the compiler hou to typescript
+		never have to touch this file
+
+--------------------------------------------------
+React Library 
+React DOM and Native (for mobile)
+	App		Div	Virtual DOM
+	 |		 |
+	Message		H1
+
+Virtual DOM compare its state with current dom and if any thing is changed then it is done by ReactDom library.
+----------------------------------------------------
+React Ecosystem
+React is js lib for creating UI. 
+There is diff betwen lib and framwork
+framework is like a toolset where as lib is like a one of the tool in it. 
+
+So React 	--> 	UI lib
+Additional tool also required apart from UI
+Routing
+HTTP
+managing app state
+internalization
+form validation
+Animation
+So we will pick the tools as per our need.
+------------------------------------------------------
+Fundamental concept of React: (important concepts)
+Building components
+Rendering markup with JSX
+Managing state
+Passing input via props
+Debugging React apps
+
+Lets get install with bootstrap 
+npm i bootstrap@5.2.3
+Output: 
+	Removed the Message compoenets created earlier
+	ListGroup.tsx component created
+	Remove the message import from App.tsx and added listgroup
+	Added bootstrap list
+	Able to configure prettier as format document tool.
+------------------------------------------------------
+Fragments: 
+what if we want to add header in the list
+
+Understand the use of Fragment
+import the {Fragment} from "react"
+wrap the list with <Fragment> tag
+------------------------------------------------------
+Rendering list dynamically
+Defined :
+const items =['Mumbai','Pune','Chennai','Banglor'];
+Used:
+	{items.map((item) => (
+          <li key={item} className="list-group-item">
+            {item}
+          </li>
+        ))}
+
+Conditional rendering:
+let items = ["New York", "Mumbai", "Delhi", "Pune"];
+if (items.length === 0) return <p>No Item found</p>;
+
+But here duplication of code: 
+ 	so with braces we can render any thing. 
+
+
+import { MouseEvent } from "react";
+//Event handler
+  const handleClick = (event: MouseEvent) => console.log(event);
+  {items.map((item, index) => (
+          <li key={item} className="list-group-item" onClick={handleClick}>
+            {item}
+          </li>
+        ))}
+------------------------------------------------------------
+Managing state
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
