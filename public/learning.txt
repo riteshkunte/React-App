@@ -124,6 +124,25 @@ import { MouseEvent } from "react";
         ))}
 ------------------------------------------------------------
 Managing state
+------------------------------------------------------------
+Important git command: 
+npm run dev --> start the server and deploy app at http://localhost:port-no/
+
+npm i - if we removed the node-module and want to reinstall the necessory module then use this command just 'npm i'
+
+now lets start pushing the changes onto cloud using git:
+git init
+git add --. :!node_modules -- here we ignore the node module and adding all files
+git status -- gives the status
+git branch -- show the branch connected with 
+git commit -m "Initial commit"  -- Now changes are staged locally
+Lets push these staged changes to remote 
+git remote add origin https://github.com/riteshkunte/React-App.git
+finally push the changes
+git push -u origin master
+------------------------------------------------------------
+
+
 
 
 
